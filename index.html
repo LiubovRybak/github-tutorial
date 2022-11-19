@@ -74,8 +74,19 @@
             </li>
           </ul>
         </form>
-        <button></button>
+        <button type="button" class="contacts-btn" data-modal-open>SEND</button>
       </div>
     </section>
+
+    <div class="backdrop visually-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-icon-cloce" width="18" height="18">
+            <use href="./img/symbol-defs.svg#close-black-18dp"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
