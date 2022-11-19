@@ -1,0 +1,18 @@
+.contacts-container {
+  background: green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(../img/contacts-bg-mob-1.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/contacts-bg-mob-2.jpg);
+  }
+}
