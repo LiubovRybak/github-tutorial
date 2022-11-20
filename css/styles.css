@@ -1,4 +1,4 @@
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -10,7 +10,57 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white-color);
+  margin: 0px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 
 .contacts-btn {
   display: block;
@@ -44,15 +94,14 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translate(-50%, -50%) scale(1);
-  padding: 39px 45px 41px 35px;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
   }
 
-  @media screen and (max-width: 1199px) {
-    width: 450px;
-    height: 609px;
+  @media screen and (min-width: 767px) {
+    width: 688px;
+    height: 524px;
   }
 }
 
@@ -61,11 +110,11 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #86e543;
   border-radius: 50%;
   background-color: transparent;
 
@@ -75,4 +124,40 @@
   &:focus {
     fill: var(--blue-color);
   }
+}
+
+.modal-icon-cloce {
+  fill: #86e543;
+}
+
+.modal-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-bottom: 32px;
+  margin-top: 100px;
+}
+
+.button-modal {
+  display: block;
+  margin: 0 auto;
+  width: 173px;
+  height: 51px;
+  background: #86e543;
+  border-radius: 16px;
+  border: none;
+}
+
+.button-modal-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #01383a;
 }
